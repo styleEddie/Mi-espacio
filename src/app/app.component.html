@@ -1,0 +1,27 @@
+<table>
+  <caption><b>Calculadora</b></caption>
+  <tr>
+    <td>Primer número</td>  
+    <td><input type="number" #primerNumero placeholder="Primer número"></td>  
+  </tr>
+  <tr>
+    <td>Segundo número</td>  
+    <td><input type="number" #segundoNumero placeholder="Segundo número"></td>  
+  </tr>
+  <tr>
+   <td></td>
+   <td class="center-content">
+     <button (click)="sumar(primerNumero.value, segundoNumero.value)">Sumar</button>
+     <button (click)="restar(primerNumero.value, segundoNumero.value)">Restar</button>
+   </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="center-content">
+      <button (click)="multiplicar(primerNumero.value, segundoNumero.value)">Multiplicar</button>
+      <button (click)="dividir(primerNumero.value, segundoNumero.value)">Dividir</button>
+    </td>
+   </tr>
+   <td><b>{{nombreResultado}}</b></td>
+   <td><b>{{resultado}}</b></td>
+</table>
